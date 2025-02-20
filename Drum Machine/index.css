@@ -1,0 +1,26 @@
+#display {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+  }
+  
+  #drum-pads {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .drum-pad {
+    border: 1px solid black;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    background-color: #84eeff;
+  }
