@@ -44,16 +44,62 @@ const KeyBoard = ({ handleInput }) => (
 );
 
 const App = () => {
-  const [input, setInput] = React.useState("")
+  const [input, setInput] = React.useState("0")
   const [output, setOutput] = React.useState("")
+  const [calculatorData, setCalculatorData] = React.useState("")
   
-  const handleInput= () => {}
+  const handleSubmit = () => {
+    console.log("handleSubmit")
+}
+  
+  const handleClear = () => {}
+  
+  const handleNumbers = () => {}
+  
+  const dotOperator = () => {}
+  
+  const handleOperators= () => {}
+  
+  const handleInput= (value) => {
+    const number = numbers.find((num) => num === value);
+    const operator = operators.find((op) => op === value);
+    
+    switch (value) {
+      case "=":
+        handleSubmit();
+        break;
+      case "AC":
+        handleClear();
+        break;
+      case number:
+        handleNumbers(value);
+        break;
+      case ".":
+        dotOperator();
+        break;
+      case operator:
+        handleOperators(value);
+        break;
+      default:
+        break;
+    }
+}
+  
+  const handleOutput= () => {
+    setOutput(calculatorData)
+  }
+  
+  React.useEffect(() => {
+    handleOutput()
+  }, [calculatorData])
   
   return (
-    <div>
+   <div className="container">
+    <div className="calculator">
      <Display input={input} output={output} />
-     <Keyboard handleInput={handleInput} />
+     <KeyBoard handleInput={handleInput} />
     </div>
+   </div>   
   )
 }
 
