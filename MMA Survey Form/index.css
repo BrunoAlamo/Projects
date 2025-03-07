@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.bodypage{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(
+      115deg,
+      rgb(25,25,25, 0.8),
+     rgb(22,22,22, 0.7)
+    ), url("https://www.sportsnet.ca/wp-content/uploads/2018/10/khabib-nurmagomedov-slams-conor-mcgregor-during-ufc-229.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subpharse{
+  font-style: italic;
+  text-align: center;
+  font-family: 'Poppins' , sans-serif;
+  color: white;
+}
+.box-1{
+  width: 85%;
+  margin: auto;
+  color: white;
+  padding: 40px;
+  display: block;
+}
+.container{
+  margin: auto;
+  width: 50%;
+  background-color: rgb(12,12,12, 0.8);
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.2rem rgba(22,22,22, 0.25);
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+.button{
+  width: 100%;
+  border-radius: 2px;
+  display: block;
+  padding: 0.75rem;
+  cursor: pointer;
+  margin: auto;
+  background-color: white;
+}
+.textbox{
+  min-height: 120px;
+  width: 100%;
+  border-radius: 2px;
+  padding: 0.75rem;
+}
+.selectorg{
+  width: 100%;
+  border-radius: 2px;
+  padding: 0.75rem;
+}
+.ageinput{
+  width: 100%;
+  border-radius: 2px;
+  padding: 0.75rem;
+}
+.nameinput{
+  width: 100%;
+  border-radius: 2px;
+  padding: 0.75rem;
+}
+.mailinput{
+  width: 100%;
+  border-radius: 2px;
+  padding: 0.75rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}

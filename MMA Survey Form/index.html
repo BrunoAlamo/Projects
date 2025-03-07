@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <h1 id="title">Mix Martial Arts Survey Form</h1>
+    <p id="description" class="subpharse">Thank you for taking the time to help us with this research</p>
+  </head>
+  <body class="bodypage">
+   <div class="container">
+    <form id="survey-form" action="process.php" method="POST" class="box-1">
+      <div>
+        <label id="name-label">Name</label>
+        <input type="name" name="name" placeholder="Enter your name" class="nameinput" id="name" required>
+      </div>
+      <div><br>
+        <label id="email-label">Email</label>
+        <input type="email" name="email" placeholder="Enter your Email" class="mailinput" id="email" required>
+      </div>
+      <div><br>
+        <label id="number-label">Age</label>
+        <input type="number" name="age" value="25" class="ageinput" id="number" placeholder="Age" min="10" max="120">   
+      </div>
+      <div><br>
+        <label>Which MMA organization do you like the most?</label>
+        <select class="selectorg" id="dropdown">
+          <option>Select an option</option>
+          <option>UFC - Ultimate Fighting Championship</option>
+          <option>ONE Championship</option>
+          <option>Bellator MMA</option>
+          <option>WSOF - World Series of Fighting</option>
+          <option>Jungle Fight</option>
+        </select>
+      </div>
+      <div><br>
+        <p>Do/Have you practice any martial art?</p>
+       <label for="yes"><input id="yes" type="radio" value="yes" name="yes-no">Yes</label>
+        <label for="no"><input id="no" type="radio" value="no" name="yes-no">No</label>
+      </div>
+      <div>
+        <p>Which combination of these different disciplines do you think would make a complete fighter?</p>
+        <label><input type="checkbox" value="Boxing">Boxing</label><br>
+        <label><input type="checkbox" value="Taekwondo">Taekwondo</label><br>
+        <label><input type="checkbox" value="Sambo">Sambo</label><br>
+        <label><input type="checkbox" value="Judo">Judo</label><br>
+        <label><input type="checkbox" value="Brazilian Jiu-Jistu">Brazilian Jiu-Jitsu</label><br>
+        <label><input type="checkbox" value="Wrestling">Wrestling</label><br>
+        <label><input type="checkbox" value="Muay Thai">Muay Thai</label><br>
+        <label><input type="checkbox" value="KickBoxing">KickBoxing</label><br>
+        <label><input type="checkbox" value="Luta livre">Luta livre</label><br>
+        <label><input type="checkbox" value="Capoeira">Capoeira</label><br>
+        <label><input type="checkbox" value="Kung Fu">Kung Fu</label><br>
+        <label><input type="checkbox" value="Karate">Karate</label><br>
+      </div>
+      <div>
+        <p>If you feel like it, explain the thoughts behind your choices</p>
+        <label><textarea name="coment" placeholder="Enter your opinion..." class="textbox"></textarea>
+      </div>
+      <div><br>
+        <input type="submit" name="submit" value="Submit" class="button" id="submit">
+      </div>
+    </form>
+   </div>
+  </body>
+</html>
