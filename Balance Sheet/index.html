@@ -1,96 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance Sheet</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">J. R. R. Tolkien</h1>
+    <p>Father of modern Fantasy</p>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>
-          <span class="flex">
-            <span>AcmeWidgetCorp</span>
-            <span>Balance Sheet</span>
-          </span>
-        </h1>
-        <div id="years" aria-hidden="true">
-          <span class="year">2019</span>
-          <span class="year">2020</span>
-          <span class="year">2021</span>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <caption>Assets</caption>
-            <thead>
-              <tr>
-                <td></td>
-                <th><span class="sr-only year">2019</span></th>
-                <th><span class="sr-only year">2020</span></th>
-                <th class="current"><span class="sr-only year">2021</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="data">
-                <th>Cash <span class="description">This is the cash we currently have on hand.</span></th>
-                <td>$25</td>
-                <td>$30</td>
-                <td class="current">$28</td>
-              </tr>
-              <tr class="data">
-                <th>Checking <span class="description">Our primary transactional account.</span></th>
-                <td>$54</td>
-                <td>$56</td>
-                <td class="current">$53</td>
-              </tr>
-              <tr class="data">
-                <th>Savings <span class="description">Funds set aside for emergencies.</span></th>
-                <td>$500</td>
-                <td>$650</td>
-                <td class="current">$728</td>
-              </tr>
-              <tr class="total">
-                <th>Total <span class="sr-only">Assets</span></th>
-                <td>$579</td>
-                <td>$736</td>
-                <td class="current">$809</td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <caption>Liabilities</caption>
-            <thead>
-              <tr>
-              <td></td>
-              <th><span class="sr-only">2019</span></th>
-              <th><span class="sr-only">2020</span></th>
-              <th><span class="sr-only">2021</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="data">
-                <th>Loans <span class="description">The outstanding balance on our startup loan.</span></th>
-                <td>$500</td>
-                <td>$250</td>
-                <td class="current">$0</td>
-              </tr>
-              <tr class="data">
-                <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th>
-                <td>$200</td>
-                <td>$300</td>
-                <td class="current">$400</td>
-              </tr>
-              <tr class="data">
-              </tr>
-              <tr class="total">
-              </tr>
-            </tbody>
-          </table>
-          <table>
-          </table>
-        </div>
-      </section>
+    <main id="main">
+    <div id="img-div">
+      <div id="img-caption">
+        <img id="image" src="https://www.writersdigest.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_300/MTcxMDY0NzcwNzkyNTMxMjA1/image-placeholder-title.webp" alt="Tolkien Enjoying a Pipe" class="center">
+        <p>Tolkien Enjoying a Pipe</p>
+      </div>
+    </div>
+    <h2>Here's a timeline of Tolkien's life:</h2>
+    <ul id="tribute-info">
+      <li>1892 - John Ronald Reuel Tolkien was born in Bloemfontein, South Africa</li>
+      <li>1900 -  Ronald begins to attend King Edward's Grammar school</li>
+      <li>1903 - Ronald begins to study Greek and Old English</li>
+      <li>1906 – 1911 - Ronald studies Old English himself and begins to develop his own languages</li>
+      <li>1909 - Ronald falls in love with Edith Bratt, his wife-to-be He fails the exams on obtaining Oxford grant</li>
+      <li>1914 - Ronald finds his sweetheart Edith Bratt The War I is declared Tolkien returns to Oxford to finish his degree</li>
+      <li>1915 - Awarded First Class Honours degree in English language and Literature</li>
+      <li>1916 - Marries Edith Bratt in Warwick Goes to war in France Sees action on the Somme as second lieutenant In November is returned to England with shell shock</li>
+      <li>1917 - While recovering begins to write "The Simarillion" Birth of the first son, John</li>
+      <li>1920 - Appointed Reader in English Language at Leeds University Birth of the second son, Michael Begins to write Father Christmas Letters</li>
+      <li>1924 - Tolkien becomes a professor of English Language at Leeds Birth of the third son, Christopher</li>
+      <li>1925 - "Sir Gawain and the Green Knight" is published by Tolkien and E.V. Gordon Tolkien is appointed as a Rawlison and Bowsworth Professor of Anglo-Saxon at Oxford</li>
+      <li>1929 - Birth of the fourth child, Priscilla</li>
+      <li>1930 - Tolkien becomes one of the founder members of "The Inklings" Begins to write the first version of "The Hobbit"</li>
+      <li>1936 - Tolkien completes "The Hobbit" Delivers his lecture "Beowulf": "The Monsters and the Critics"</li>
+      <li>1937 - "The Hobbit" is published Tolkien begins to write a sequel, which becomes "The Lord of the Rings" in future</li>
+      <li>1939 - Tolkien delivers his lecture on "Fairy stories" 16 chapters of “the Lord of the Rings” are written</li>
+      <li>1945 - "Leaf by Niggle" is published Tolkien is elected to be a professor of the English Language and Literature at Oxford</li>
+      <li>1948 - "The Lord of the Rings" is completed</li>
+      <li>1949 - "Farmer Giles of Ham" is published</li>
+      <li>1951 - The new edition of “The Hobbit” is published</li>
+      <li>1954 - “The Fellowship of the Ring” and “The Two Towers” (part One and Two) are published</li>
+      <li>1955 - Publication of "The Lord of the Rings", part Three</li>
+      <li>1959 - Tolkien’s retirement</li>
+      <li>1962 - "The adventures of Tom Bombadil" is published</li>
+      <li>1964 - "Tree and Leaf" is published</li>
+      <li>1965 - American editions of "The Lord of the Rings" are published and campus cult of the novel begins</li>
+      <li>1966 - The 3rd edition of “The Hobbit” is published</li>
+      <li>1967 - "Smith of Wooton Major" is published</li>
+      <li>1968 - The Tolkien’s move to Poole near Bournemouth</li>
+      <li>1971 - Edith Tolkien on November 29th dies, aged 82</li>
+      <li>1972 - Tolkien returns to Oxford. Receives CBE from the Queen</li>
+      <li>1973 - J.R.R. Tolkien dies on September 2nd, aged 81</li>
+    </ul>
+    <p class="pharse">"Not all those who wander are lost" - J. R. R. Tolkien</p>
+    <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien#Biography" id="tribute-link" target="_blank">Wikipedia entry.</a></h3>
     </main>
   </body>
+  
 </html>
+
