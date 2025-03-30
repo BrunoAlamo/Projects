@@ -1,98 +1,237 @@
 header{
-    background-color: #8B0000;
-    background-size: auto;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .headerimg{
-    width: 50px;
-    height: 50px;
-  }
-  .navbar-brand{
-    margin: 10px;
-  }
-  .div1{
-    margin-top: 100px;
+  background-color: #8B0000;
+  background-size: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+#header-img{
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+a { 
+  margin-right: 15px;
+}
+
+.navbar-brand{
+  margin: 10px;
+}
+.div1{
+  margin-top: 100px;
+}
+
+.div1{
+  text-align: center;
+  font-family: Helvetica;
+}
+.mail{
+  width: 20em;
+  padding: 5px;
+}
+.button{
+  margin-top: 10px;
+  width: 8em;
+  padding: 3px;
+}
+.materials{
+  margin-left: 200px;
+  margin-top: 50px;
+  font-family: Helvetica;
+}
+.submaterials{
+  position: relative;
+  left: 120px;
+  width: 700px;
+}
+.shipping{
+  margin-left: 200px;
+  margin-top: 50px;
+  font-family: Helvetica;
+}
+.subshipping{
+  position: relative;
+  left: 120px;
+  width: 700px;
+}
+.quality{
+  margin-left: 200px;
+  margin-top: 50px;
+  font-family: Helvetica;
+}
+.subquality{
+  position: relative;
+  left: 120px;
+  width: 700px;
+}
+.smithing{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.truck{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.seal{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+h3{
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+h4{
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+h5{
+  font-size: 22px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+h6 {
+  text-align: center;
+}
+
+.video{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.katana, .wakizashi, .tachi {
+  width: 300px;
+  height: 400px;
+  object-fit: cover; /* Ensures the image fully covers the container */
+  border-radius: 15px; /* Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition for hover effects */
+  margin: 10px; /* Adds spacing between the images */
+  display: block; /* Ensures the image is displayed as a block-level element */
+}
+
+.katana:hover, .wakizashi:hover, .tachi:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increases the shadow on hover */
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-brand {
+    font-size: 18px; /* Slightly smaller brand text */
   }
   
-  .div1{
+  .navbar-nav {
     text-align: center;
-    font-family: Helvetica;
-  }
-  .mail{
-    width: 20em;
-    padding: 5px;
-  }
-  .button{
-    margin-top: 10px;
-    width: 8em;
-    padding: 3px;
-  }
-  .materials{
-    margin-left: 200px;
-    margin-top: 50px;
-    font-family: Helvetica;
-  }
-  .submaterials{
-    position: relative;
-    left: 120px;
-    width: 700px;
-  }
-  .shipping{
-    margin-left: 200px;
-    margin-top: 50px;
-    font-family: Helvetica;
-  }
-  .subshipping{
-    position: relative;
-    left: 120px;
-    width: 700px;
-  }
-  .quality{
-    margin-left: 200px;
-    margin-top: 50px;
-    font-family: Helvetica;
-  }
-  .subquality{
-    position: relative;
-    left: 120px;
-    width: 700px;
-  }
-  .smithing{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-  }
-  .truck{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-  }
-  .seal{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-  }
-  h3{
-    font-size: 22px;
-    margin-bottom: 2px;
-  }
-  h4{
-    font-size: 22px;
-    margin-bottom: 2px;
-  }
-  h5{
-    font-size: 22px;
-    margin-bottom: 2px;
-  }
-  .video{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
   
+  /* Adjust contact form inputs */
+  .mail {
+    width: 90%; /* Makes the email input field take up most of the screen */
+  }
+  
+  .button {
+    width: 90%; /* Makes the button responsive as well */
+  }
+
+  /* Flex container adjustments for smaller screens */
+  .flex-container {
+    flex-direction: column; /* Stacks the images vertically */
+    align-items: center; /* Center align images */
+  }
+  
+  .katana, .wakizashi, .tachi {
+    width: 80%; /* Makes the images smaller to fit better on mobile */
+    height: auto; /* Keeps the height proportional */
+  }
+
+  /* Adjusting sections */
+  .materials, .shipping, .quality {
+    margin-left: 0; /* Removes the large left margin */
+    margin-top: 20px; /* Smaller margin for better use of space */
+  }
+  
+  .submaterials, .subshipping, .subquality {
+    position: static; /* Removes unnecessary positioning */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  /* Adjust video embedding for smaller devices */
+  .video iframe {
+    width: 100%; /* Makes the video responsive */
+    height: auto;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  /* Adjust navbar */
+  .navbar-brand {
+    font-size: 16px; /* Smaller brand text */
+  }
+
+  .navbar-toggler {
+    font-size: 14px; /* Smaller hamburger menu button */
+  }
+  
+  /* Contact form input fields */
+  .mail {
+    width: 100%; /* Takes full width on mobile */
+  }
+
+  .button {
+    width: 100%; /* Takes full width on mobile */
+  }
+
+  /* Adjust images in flex-container */
+  .katana, .wakizashi, .tachi {
+    width: 90%; /* Makes images fit better on smaller screens */
+    margin-bottom: 15px; /* Adds spacing between images */
+  }
+
+  /* Adjust section margins */
+  .materials, .shipping, .quality {
+    margin-left: 0; /* No left margin */
+    margin-top: 10px; /* Smaller margin for mobile */
+  }
+  
+  /* Ensure the text remains readable on mobile */
+  .submaterials, .subshipping, .subquality {
+    font-size: 14px; /* Smaller font for better readability */
+    width: 90%; /* Narrower text sections */
+    margin: 0 auto; /* Center the content */
+  }
+
+  /* Adjust footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Adjust footer links */
+  footer .container {
+    display: block;
+  }
+  
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+

@@ -1,11 +1,10 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
   <header id="header">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles.css">
     <div>
-      <nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-dark">
+      <nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-dark" id="nav-bar">
+        <img src="https://raw.githubusercontent.com/BrunoAlamo/Projects/main/Product%20Landing%20Page/images/katana%20icon8.png" alt="katana-icon" id="header-img" class="header-img">
     <a class="navbar-brand" href="">Japanese Swords</a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -13,13 +12,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">Features</a>
+            <a class="nav-link" href="#features">Features</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
         </li>
     </ul>
  </div>
@@ -27,37 +26,91 @@
    </div>
   </header>
   <body>
+    <section id="contact">
    <div class="div1">
     <h2>Handcrafted, home-made masterpicies</h2>
-     <form id="form">
+     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <input type="email" placeholder="Enter your email address" name="email" id="email" class="mail" required><br>
       <input type="submit" name="submit" value="Submit" id="submit" class="button">
      </form>
    </div>
+   </section>
+<section id="features">
    <div class="materials">
      <img src="https://img.freepik.com/premium-vector/blacksmith-vector-icon-anvil-hammer-forge-craftmanship-blacksmith-black-metal-steel_548264-452.jpg?w=2000" class="smithing" alt="forge" id="forge">          <div class="submaterials"><h3>Premium Materials</h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue nisl non imperdiet blandit. Vivamus vestibulum metus velit, congue interdum risus maximus at.</p></div>
+     <h4>🔹 Forged from the Finest Steel </h4><p>
+Each sword is crafted from high-carbon steel, following traditional Japanese forging techniques. Our master swordsmiths use time-honored methods to ensure durability, sharpness, and a perfect balance. Whether for display, practice, or collection, every blade is a true masterpiece.</p></div>
    </div> 
     <div class="shipping">
       <img src="https://i.pinimg.com/originals/af/ae/8f/afae8f07de4c7b4f27e033da6855283d.png" class="truck" alt="fastshipping">
-     <div class="subshipping"><h4>Fast Shipping</h4>
-      <p>Mauris dolor tellus, viverra a imperdiet a, aliquet id mi. Sed faucibus tristique ipsum, et laoreet elit interdum at. Nulla accumsan porttitor rhoncus.</p></div>
+     <div class="subshipping"><h3>Fast Shipping</h3>
+     <h4>🚀 Swift & Secure Delivery</h4>
+      <p>We understand that anticipation is part of the excitement. That’s why we offer fast and reliable worldwide shipping, ensuring your sword reaches you in perfect condition. Each order is carefully packaged for protection, so your blade arrives battle-ready.</p></div>
       </div>
     <div class="quality">
       <img src="https://static.vecteezy.com/system/resources/thumbnails/003/678/261/small/quality-badge-icon-design-medal-and-ribbon-illustration-free-vector.jpg" class="seal" alt="qualityassurance">
-      <div class="subquality"><h5>Quality Assurance</h5>
-      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean et urna ornare, dictum ex vitae, sodales augue. Ut sollicitudin nibh ante, a consectetur mi viverra at.</p></div>
+      <div class="subquality"><h3>Quality Assurance</h3>
+      <h4>✅ Authenticity & Craftsmanship Guaranteed</h4>
+      <p>Our swords go through rigorous quality control, ensuring each piece meets the highest standards. Every blade is hand-polished, expertly sharpened, and tested for strength, delivering historical accuracy and modern durability. We guarantee 100% satisfaction or your money back.</p></div>
     </div>
-    <center><iframe width="420" height="315" class="video"
-src="https://www.youtube.com/watch?v=9oHUYu4Itt4&ab_channel=RandomHands">
-      </iframe></center>
+    <div class="video">
+    <center>
+  <iframe width="420" height="315" id="video"
+    src="https://www.youtube.com/embed/9oHUYu4Itt4" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</center>
+</div>
+      </section>
+    <section id="pricing">
     <div class="flex-container">
-      <div><h6>Katana</h6></div>
-      <div><h7>Wakizashi</h7></div>
-      <div><h8>Tachi</h8></div>
+      <div>
+        <h5>Katana</h5>
+        <img src="https://raw.githubusercontent.com/BrunoAlamo/Projects/main/Product%20Landing%20Page/images/realkatana%20image.jpeg" alt="katana" class="katana">
+        <h6>$600</h6>
+        </div>
+      <div>
+        <h5>Wakizashi</h5>
+        <img src="https://raw.githubusercontent.com/BrunoAlamo/Projects/refs/heads/main/Product%20Landing%20Page/images/Wakizashi.webp" atl="Wakizashi" class="wakizashi">
+        <h6>$500</h6>
+        </div>
+      <div>
+        <h5>Tachi</h5>
+        <img src="https://raw.githubusercontent.com/BrunoAlamo/Projects/refs/heads/main/Product%20Landing%20Page/images/tachi.webp" alt="tachi" class="tachi">
+        <h6>$480</h6>
+        </div>
     </div>
+    </section>
   </body>
-  <footer>
-    
-  </footer>
+ <footer class="bg-dark text-light text-center py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Japanese Swords</h5>
+        <img src="https://raw.githubusercontent.com/BrunoAlamo/Projects/main/Product%20Landing%20Page/images/katana%20icon8.png" alt="katana-icon" class="footer-logo" width="50">
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#features" class="text-light">Features</a></li>
+          <li><a href="#pricing" class="text-light">Pricing</a></li>
+          <li><a href="#contact" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <a href="https://facebook.com" target="_blank" class="text-light mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-light mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com" target="_blank" class="text-light mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <p class="mb-0">© 2025 Japanese Swords. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
 </html>
