@@ -1,0 +1,221 @@
+head{
+    background-color: #8B0000;
+    background-size: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #header-img{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+  }
+  .navbar-brand{
+    margin: 10px;
+  }
+  
+  a { 
+    margin-right: 40px;
+  }
+  nav{
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .about {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  .about-title {
+    font-size: 34px;
+    text-align: center;
+    padding-top: 45vh;
+    color: white;
+  }
+  .about-text {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+  }
+  .projects {
+    width: 100%;
+    height: 100vh;
+  }
+  .project-tile {
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+  }
+  hr{
+    color: white;
+    width: 50%;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  .katana, .wakizashi, .tachi {
+    width: 420px;
+    height: 420px;
+    object-fit: cover; /* Ensures the image fully covers the container */
+    border-radius: 15px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition for hover effects */
+    margin: 10px; /* Adds spacing between the images */
+    display: block; /* Ensures the image is displayed as a block-level element */
+  }
+  
+  h5 {
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-section {
+    width: 100%;
+    height: 100vh;
+      text-align: center;
+      background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+      color: white;
+      padding: 50px 20px;
+  }
+  
+  .contact-title {
+      padding-top: 80px;
+      font-size: 34px;
+      margin-bottom: 10px;
+  }
+  
+  .contact-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  
+  .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      margin: auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+      background: #8B0000;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+      background: #a00000;
+  }
+  
+  .social-links {
+      margin-top: 20px;
+  }
+  
+  .social-links a img {
+      width: 40px;
+      margin: 0 10px;
+  }
+  
+  .footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      font-size: 14px;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  /* Small Screens (Phones - up to 600px) */
+  @media (max-width: 600px) {
+      .navbar {
+          font-size: 18px;
+      }
+      
+      .about-title {
+          font-size: 28px;
+          padding-top: 40vh;
+      }
+  
+      .about-text {
+          font-size: 18px;
+      }
+  
+      .project-tile {
+          font-size: 28px;
+      }
+  
+      /* Stack project images in a column */
+      .flex-container {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .katana, .wakizashi, .tachi {
+          width: 90%;
+          height: auto;
+          margin-bottom: 20px; /* Add space between stacked images */
+      }
+  
+      .contact-form {
+          width: 90%;
+      }
+  
+      .social-links a img {
+          width: 30px;
+      }
+  }
+  
+  /* Tablets (600px - 1024px) */
+  @media (max-width: 1024px) {
+      .katana, .wakizashi, .tachi {
+          width: 80%;
+      }
+  
+      .about-title {
+          font-size: 32px;
+      }
+  
+      .project-tile {
+          font-size: 32px;
+      }
+  
+      .contact-form {
+          width: 80%;
+      }
+  }
+  
+  /* Larger Screens (Desktops - above 1024px) */
+  @media (min-width: 1025px) {
+      .flex-container {
+          flex-wrap: nowrap;
+      }
+  
+      .katana, .wakizashi, .tachi {
+          width: 400px;
+      }
+  }
+  
+  
